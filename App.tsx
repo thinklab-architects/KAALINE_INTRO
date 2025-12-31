@@ -320,16 +320,57 @@ const App: React.FC = () => {
                 <p className="text-lg text-kaa-slate mb-8 leading-relaxed">
                   不再需要等待上班時間撥打電話。公會 LINE 整合了強大的自動回覆機器人，能針對常見問題提供即時回覆。
                 </p>
-                <div className="flex flex-wrap gap-2">
+                <div className="space-y-6">
                   {[
-                    "會員輪值", "專業進階課程", "招標公告", "法規訊息", "業務申辦", "收費標準", "活動行事曆", "Default",
-                    "匯款", "繳費", "大東", "電話", "網站首頁", "會員名錄", "鑑定委託", "招標疑義", "本月退款", "最新消息",
-                    "下載", "建築師委任", "積分", "金質獎", "委員會", "仁和賞", "合約", "酬金", "綠建築", "建築師",
-                    "FACEBOOK", "INSTGRAM", "Youtube", "地圖", "理監事", "報價", "危老", "大林蒲", "社團", "建管"
-                  ].map((keyword, idx) => (
-                    <span key={idx} className="px-3 py-1 bg-gray-100 text-kaa-navy text-sm rounded-full hover:bg-kaa-gold hover:text-white transition-colors cursor-default">
-                      #{keyword}
-                    </span>
+                    {
+                      name: "會務與會員服務",
+                      style: "bg-blue-50 text-blue-700 border-blue-100",
+                      tagStyle: "bg-blue-100 text-blue-800 hover:bg-blue-200",
+                      keywords: ["會員輪值", "會員名錄", "委員會", "理監事", "建築師", "社團", "建築師委任"]
+                    },
+                    {
+                      name: "財務相關",
+                      style: "bg-emerald-50 text-emerald-700 border-emerald-100",
+                      tagStyle: "bg-emerald-100 text-emerald-800 hover:bg-emerald-200",
+                      keywords: ["收費標準", "匯款", "繳費", "本月退款", "報價", "酬金", "合約"]
+                    },
+                    {
+                      name: "教育與活動",
+                      style: "bg-orange-50 text-orange-700 border-orange-100",
+                      tagStyle: "bg-orange-100 text-orange-800 hover:bg-orange-200",
+                      keywords: ["專業進階課程", "活動行事曆", "積分", "金質獎", "仁和賞"]
+                    },
+                    {
+                      name: "法規與實務",
+                      style: "bg-rose-50 text-rose-700 border-rose-100",
+                      tagStyle: "bg-rose-100 text-rose-800 hover:bg-rose-200",
+                      keywords: ["法規訊息", "綠建築", "危老", "建管", "鑑定委託", "業務申辦", "招標公告", "招標疑義", "大林蒲"]
+                    },
+                    {
+                      name: "資訊與聯絡",
+                      style: "bg-violet-50 text-violet-700 border-violet-100",
+                      tagStyle: "bg-violet-100 text-violet-800 hover:bg-violet-200",
+                      keywords: ["電話", "網站首頁", "地圖", "大東", "最新消息", "下載", "Default"]
+                    },
+                    {
+                      name: "社群媒體",
+                      style: "bg-pink-50 text-pink-700 border-pink-100",
+                      tagStyle: "bg-pink-100 text-pink-800 hover:bg-pink-200",
+                      keywords: ["FACEBOOK", "INSTGRAM", "Youtube"]
+                    }
+                  ].map((category, idx) => (
+                    <div key={idx} className="flex flex-col sm:flex-row sm:items-start gap-3">
+                      <div className={`shrink-0 px-3 py-1.5 rounded-md text-sm font-bold border ${category.style} sm:w-32 text-center`}>
+                        {category.name}
+                      </div>
+                      <div className="flex flex-wrap gap-2">
+                        {category.keywords.map((keyword, kIdx) => (
+                          <span key={kIdx} className={`px-3 py-1.5 text-sm rounded-full transition-colors cursor-default ${category.tagStyle}`}>
+                            #{keyword}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
                   ))}
                 </div>
 
