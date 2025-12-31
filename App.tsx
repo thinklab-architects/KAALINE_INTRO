@@ -406,7 +406,7 @@ const App: React.FC = () => {
                   <button className="px-10 py-4 bg-kaa-navy text-white rounded-md font-bold text-lg shadow-lg hover:bg-gray-800 transition-all flex items-center justify-center gap-3">
                     <MessageSquare /> 點擊加入好友
                   </button>
-                  <div className="flex items-center gap-4 text-kaa-navy/60 text-sm italic font-bold">
+                  <div className="flex items-center gap-4 text-kaa-navy/60 text-2xl italic font-bold">
                     <span>或搜尋 ID: @kaarch</span>
                   </div>
                 </div>
