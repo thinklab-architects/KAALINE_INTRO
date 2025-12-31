@@ -420,7 +420,7 @@ const App: React.FC = () => {
                     </div>
                   </div>
                 </div>
-                <span className="text-kaa-navy font-bold tracking-widest uppercase">掃描 QR Code 加入</span>
+                <span className="text-kaa-navy font-bold tracking-widest uppercase text-xl">掃描 QR Code 加入</span>
               </div>
             </div>
           </div>
