@@ -414,11 +414,12 @@ const App: React.FC = () => {
               </div>
               <div className="md:w-1/2 bg-white/20 p-12 flex flex-col items-center justify-center border-l border-white/10">
                 <div className="bg-white p-6 rounded-2xl shadow-xl mb-6">
-                  <div className="w-48 h-48 bg-gray-50 flex items-center justify-center border-4 border-kaa-gold/20 relative">
-                    <QrCode size={160} className="text-kaa-navy" />
-                    <div className="absolute inset-0 flex items-center justify-center opacity-10">
-                      <div className="w-12 h-12 bg-kaa-navy rounded-full"></div>
-                    </div>
+                  <div className="w-48 h-48 bg-white flex items-center justify-center p-2">
+                    <img
+                      src="https://qr-official.line.me/gs/M_536fdiax_BW.png?oat_content=qr"
+                      alt="LINE QR Code"
+                      className="w-full h-full object-contain"
+                    />
                   </div>
                 </div>
                 <span className="text-kaa-navy font-bold tracking-widest uppercase text-xl">掃描 QR Code 加入</span>
