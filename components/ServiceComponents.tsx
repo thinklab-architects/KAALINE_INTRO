@@ -49,7 +49,7 @@ export const OriginFlipCard: React.FC<OriginFlipCardProps> = ({ isFlipped, onFli
         {/* Back side: Modern/Official */}
         <div className="absolute inset-0 backface-hidden rounded-lg overflow-hidden shadow-2xl rotate-y-180">
           <img
-            src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?auto=format&fit=crop&q=80&w=800"
+            src={officialServiceImg}
             alt="Official Digital Service"
             className="w-full h-full object-cover opacity-80"
           />
