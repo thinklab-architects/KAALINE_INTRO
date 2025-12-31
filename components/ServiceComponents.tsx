@@ -333,7 +333,7 @@ export const TimelineSection: React.FC = () => {
 
 export const ChatBotPreview: React.FC = () => {
   const [messages, setMessages] = useState([
-    { role: 'bot', text: '您好，高雄市建築師公會 AI 助理為您服務。請問有什麼我可以幫您的？' },
+    { role: 'bot', text: '我是社團法人高雄市建築師公會。\n感謝您加入好友😉' },
     { role: 'user', text: '理監事' },
     { role: 'bot', text: '有關第十七屆"理監事"相關資訊請參考以下網址\nhttps://www.kaa.org.tw/aboutkaa03.php' }
   ]);
