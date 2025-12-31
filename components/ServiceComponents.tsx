@@ -16,6 +16,8 @@ import eventsIcon from '../ICON/活動訊息.jpg';
 import coursesIcon from '../ICON/研討活動.jpg';
 import socialIcon from '../ICON/社交媒體.jpg';
 import logo from '../logo.png';
+import newsFrontImg from '../6services/最新消息-正面.jpg';
+import newsBackImg from '../6services/最新消息-反面.jpg';
 
 interface OriginFlipCardProps {
   isFlipped: boolean;
@@ -76,8 +78,8 @@ export const FeatureGrid: React.FC = () => {
       details: "透過官方 LINE NEWS，您將第一時間收到公會發布的最新公告、會議通知以及建築業界的重要動態。",
       link: "https://thinklab-architects.github.io/news/",
       images: {
-        front: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&q=80&w=1200",
-        back: "https://images.unsplash.com/photo-1495020689067-958852a7765e?auto=format&fit=crop&q=80&w=1200"
+        front: newsFrontImg,
+        back: newsBackImg
       }
     },
     {
