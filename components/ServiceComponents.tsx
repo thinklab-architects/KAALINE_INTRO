@@ -15,6 +15,7 @@ import refundIcon from '../ICON/本月退款.jpg';
 import eventsIcon from '../ICON/活動訊息.jpg';
 import coursesIcon from '../ICON/研討活動.jpg';
 import socialIcon from '../ICON/社交媒體.jpg';
+import logo from '../logo.png';
 
 interface OriginFlipCardProps {
   isFlipped: boolean;
@@ -334,7 +335,7 @@ export const ChatBotPreview: React.FC = () => {
   const [messages, setMessages] = useState([
     { role: 'bot', text: '您好，高雄市建築師公會 AI 助理為您服務。請問有什麼我可以幫您的？' },
     { role: 'user', text: '理監事' },
-    { role: 'bot', text: '沒問題！請點擊下方「會員專區」>「積分查詢」，輸入您的會員編號即可查閱最新累計積分。' }
+    { role: 'bot', text: '有關第十七屆"理監事"相關資訊請參考以下網址\nhttps://www.kaa.org.tw/aboutkaa03.php' }
   ]);
 
   return (
@@ -354,10 +355,17 @@ export const ChatBotPreview: React.FC = () => {
               key={i}
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
-              className={`flex ${m.role === 'user' ? 'justify-end' : 'justify-start'}`}
+              className={`flex ${m.role === 'user' ? 'justify-end' : 'justify-start items-end gap-2'}`}
             >
-              <div className={`max-w-[80%] p-3 rounded-2xl text-sm ${m.role === 'user' ? 'bg-kaa-navy text-white rounded-tr-none' : 'bg-white border border-gray-200 text-kaa-slate rounded-tl-none shadow-sm'}`}>
-                {m.text}
+              {m.role === 'bot' && (
+                <img src={logo} alt="Bot Avatar" className="w-8 h-8 rounded-full mb-1 shadow-sm bg-white" />
+              )}
+              <div className={`max-w-[80%] p-3 rounded-2xl text-sm whitespace-pre-wrap ${m.role === 'user' ? 'bg-kaa-navy text-white rounded-tr-none' : 'bg-white border border-gray-200 text-kaa-slate rounded-tl-none shadow-sm'}`}>
+                {m.text.split(/(https?:\/\/[^\s]+)/g).map((part, i) =>
+                  part.match(/https?:\/\/[^\s]+/) ?
+                    <a key={i} href={part} target="_blank" rel="noopener noreferrer" className="text-kaa-gold underline hover:text-yellow-600 break-all">{part}</a> :
+                    part
+                )}
               </div>
             </motion.div>
           ))}
