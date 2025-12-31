@@ -105,7 +105,7 @@ export const FeatureGrid: React.FC = () => {
       title: "活動訊息",
       icon: eventsIcon,
       desc: "公會活動與講座行事曆",
-      details: "公會舉辦的各類學術演講、參訪活動、會員聯誼等行程一目了然。支援一鍵加入手機行事曆功能，並可在活動前收到貼心提醒，確保您不錯過任何精彩活動。介面以月曆形式呈現，並標註重要日程，讓您的行程安排更加從容。",
+      details: "公會舉辦的各類參訪活動、會員聯誼等行程一目了然。確保您不錯過任何精彩活動，讓您的行程安排更加從容。",
       link: "https://thinklab-architects.github.io/line-event/",
       images: {
         front: "https://images.unsplash.com/photo-1540317580384-e5d43867caa6?auto=format&fit=crop&q=80&w=1200",
