@@ -344,7 +344,7 @@ export const ChatBotPreview: React.FC = () => {
         <div className="bg-kaa-gold p-6 flex items-center gap-3">
           <div className="w-8 h-8 bg-white text-kaa-navy rounded-full flex items-center justify-center font-bold">高</div>
           <div className="flex flex-col">
-            <span className="text-kaa-navy text-sm font-bold">高雄建築師公會助理</span>
+            <span className="text-kaa-navy text-sm font-bold">社團法人高雄市建築師公會</span>
             <span className="text-kaa-navy/60 text-[10px] flex items-center gap-1">● 在線上</span>
           </div>
         </div>
