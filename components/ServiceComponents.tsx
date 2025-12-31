@@ -116,7 +116,7 @@ export const FeatureGrid: React.FC = () => {
       title: "研討課程",
       icon: coursesIcon,
       desc: "專業進修課程報名與紀錄",
-      details: "瀏覽最新的專業進修課程資訊，並可直接透過 LINE 完成線上報名。系統同時記錄您的個人進修時數與積分，方便隨時查閱換證所需的積分進度。我們還提供課程講義下載與課後問卷回饋，全方位提升學習體驗。",
+      details: "瀏覽最新的專業進修課程資訊，並可直接連結線上報名。方便隨時查看最新課程的積分。",
       link: "https://thinklab-architects.github.io/line-courses/",
       images: {
         front: "https://images.unsplash.com/photo-1524178232363-1fb2b075b955?auto=format&fit=crop&q=80&w=1200",
