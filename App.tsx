@@ -365,7 +365,7 @@ const App: React.FC = () => {
                       </div>
                       <div className="flex flex-wrap gap-2">
                         {category.keywords.map((keyword, kIdx) => (
-                          <span key={kIdx} className={`px-3 py-1.5 text-sm rounded-full transition-all duration-200 hover:scale-110 cursor-default ${category.tagStyle}`}>
+                          <span key={kIdx} className={`px-3 py-1.5 text-sm rounded-full transition-all duration-200 hover:scale-125 cursor-default ${category.tagStyle}`}>
                             #{keyword}
                           </span>
                         ))}
