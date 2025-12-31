@@ -72,7 +72,7 @@ export const FeatureGrid: React.FC = () => {
       title: "最新消息",
       icon: newsIcon,
       desc: "即時掌握公會公告與業界動態",
-      details: "透過官方 LINE，您將第一時間收到公會發布的最新公告、會議通知以及建築業界的重要動態。不再擔心因為群組訊息過多而漏接重要資訊，系統會自動將緊急且重要的消息推播給您。除此之外，我們還整合了即時新聞推播，讓您隨時掌握法規變更與政策動向。",
+      details: "透過官方 LINE NEWS，您將第一時間收到公會發布的最新公告、會議通知以及建築業界的重要動態。",
       link: "https://thinklab-architects.github.io/news/",
       images: {
         front: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&q=80&w=1200",
