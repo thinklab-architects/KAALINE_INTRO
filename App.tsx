@@ -320,6 +320,18 @@ const App: React.FC = () => {
                 <p className="text-lg text-kaa-slate mb-8 leading-relaxed">
                   不再需要等待上班時間撥打電話。公會 LINE 整合了強大的自動回覆機器人，能針對常見問題提供即時回覆。
                 </p>
+                <div className="flex flex-wrap gap-2">
+                  {[
+                    "會員輪值", "專業進階課程", "招標公告", "法規訊息", "業務申辦", "收費標準", "活動行事曆", "Default",
+                    "匯款", "繳費", "大東", "電話", "網站首頁", "會員名錄", "鑑定委託", "招標疑義", "本月退款", "最新消息",
+                    "下載", "建築師委任", "積分", "金質獎", "委員會", "仁和賞", "合約", "酬金", "綠建築", "建築師",
+                    "FACEBOOK", "INSTGRAM", "Youtube", "地圖", "理監事", "報價", "危老", "大林蒲", "社團", "建管"
+                  ].map((keyword, idx) => (
+                    <span key={idx} className="px-3 py-1 bg-gray-100 text-kaa-navy text-sm rounded-full hover:bg-kaa-gold hover:text-white transition-colors cursor-default">
+                      #{keyword}
+                    </span>
+                  ))}
+                </div>
 
               </div>
             </div>
