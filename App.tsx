@@ -56,7 +56,7 @@ const App: React.FC = () => {
             <a
               href="#join"
               onClick={scrollToSection('join')}
-              className="px-5 py-2 line-gradient text-white rounded-md hover:opacity-90 transition-all shadow-sm cursor-pointer flex items-center gap-2"
+              className="px-5 py-2 bg-kaa-gold text-kaa-navy rounded-md hover:bg-yellow-400 transition-all shadow-sm cursor-pointer flex items-center gap-2"
             >
               <MessageSquare size={16} /> 立即加入
             </a>
@@ -75,7 +75,7 @@ const App: React.FC = () => {
           <a href="#features" onClick={scrollToSection('features')} className="hover:text-kaa-gold uppercase">六大功能</a>
           <a href="#bot" onClick={scrollToSection('bot')} className="hover:text-kaa-gold uppercase">智能助手</a>
           <a href="#planning" onClick={scrollToSection('planning')} className="hover:text-kaa-gold uppercase">時程規劃</a>
-          <a href="#join" onClick={scrollToSection('join')} className="px-8 py-3 line-gradient text-white rounded-md shadow-lg">立即加入 LINE</a>
+          <a href="#join" onClick={scrollToSection('join')} className="px-8 py-3 bg-kaa-gold text-kaa-navy rounded-md shadow-lg">立即加入 LINE</a>
           <button onClick={() => setMenuOpen(false)} className="mt-4 text-kaa-slate text-sm flex items-center gap-2"><X size={16} /> 關閉選單</button>
         </div>
       )}
