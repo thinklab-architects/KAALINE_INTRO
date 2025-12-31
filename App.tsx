@@ -316,7 +316,7 @@ const App: React.FC = () => {
                 <div className="inline-flex items-center gap-2 px-3 py-1 bg-kaa-cream text-kaa-gold text-xs font-bold tracking-widest uppercase rounded-sm mb-6 border border-kaa-gold/30">
                   AI ASSISTANT
                 </div>
-                <h2 className="font-serif text-4xl md:text-5xl mb-8 text-kaa-navy">24/7 智能客服：<br />機器人自動回答</h2>
+                <h2 className="font-serif text-4xl md:text-5xl mb-8 text-kaa-navy">24/7 LINE機器人</h2>
                 <p className="text-lg text-kaa-slate mb-8 leading-relaxed">
                   不再需要等待上班時間撥打電話。公會 LINE 整合了強大的自動回覆機器人，能針對常見問題提供即時回覆。
                 </p>
