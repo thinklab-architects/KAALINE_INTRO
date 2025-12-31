@@ -390,14 +390,14 @@ const App: React.FC = () => {
       <footer className="bg-gray-50 text-kaa-slate py-20 border-t border-gray-200">
         <div className="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-12">
           <div className="text-center md:text-left">
-            <div className="text-kaa-navy font-serif font-bold text-3xl mb-4 flex items-center justify-center md:justify-start gap-3">
+            <a href="https://www.kaa.org.tw/" target="_blank" rel="noopener noreferrer" className="text-kaa-navy font-serif font-bold text-3xl mb-4 flex items-center justify-center md:justify-start gap-3 hover:opacity-80 transition-opacity">
               <img src={logo} alt="Logo" className="w-8 h-8 object-contain" />
               高雄市建築師公會
-            </div>
+            </a>
             <p className="text-sm max-w-md">高雄市三民區博愛一路 391 號 10 樓<br />Tel: (07) 323-7248 | Fax: (07) 323-7245</p>
           </div>
           <div className="flex gap-8 text-sm text-kaa-slate/80 font-medium">
-            <a href="#" className="hover:text-kaa-gold transition-colors">公會官網</a>
+            <a href="https://www.kaa.org.tw/" target="_blank" rel="noopener noreferrer" className="hover:text-kaa-gold transition-colors">公會官網</a>
             <a href="#" className="hover:text-kaa-gold transition-colors">法規查詢</a>
             <a href="#" className="hover:text-kaa-gold transition-colors">隱私權政策</a>
           </div>

@@ -67,6 +67,7 @@ export const FeatureGrid: React.FC = () => {
       icon: <Bell />,
       desc: "即時掌握公會公告與業界動態",
       details: "透過官方 LINE，您將第一時間收到公會發布的最新公告、會議通知以及建築業界的重要動態。不再擔心因為群組訊息過多而漏接重要資訊，系統會自動將緊急且重要的消息推播給您。除此之外，我們還整合了即時新聞推播，讓您隨時掌握法規變更與政策動向。",
+      link: "https://thinklab-architects.github.io/news/",
       images: {
         front: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&q=80&w=1200",
         back: "https://images.unsplash.com/photo-1495020689067-958852a7765e?auto=format&fit=crop&q=80&w=1200"
@@ -77,6 +78,7 @@ export const FeatureGrid: React.FC = () => {
       icon: <Search />,
       desc: "建築法規數據庫快速檢索",
       details: "整合全國與高雄市在地建築法規資料庫。輸入關鍵字即可快速檢索相關條文、解釋令與函釋。提供手機版最佳化閱讀體驗，是您外出開會、跑照時的最佳隨身法規顧問。系統支援模糊搜尋與歷史紀錄，讓查閱法規變得前所未有的簡單。",
+      link: "https://thinklab-architects.github.io/line-code/",
       images: {
         front: "https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&q=80&w=1200",
         back: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=1200"
@@ -87,6 +89,7 @@ export const FeatureGrid: React.FC = () => {
       icon: <CircleDollarSign />,
       desc: "線上查詢掛號與退費進度",
       details: "輸入案件掛號號碼，即可即時查詢案件審查進度與退費辦理情形。省去電話詢問的等待時間，隨時隨地掌握案件流向，提升事務所行政效率。系統自動串接公會後台，數據即時同步，並可設定進度變更主動通知。",
+      link: "",
       images: {
         front: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80&w=1200",
         back: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&q=80&w=1200"
@@ -97,6 +100,7 @@ export const FeatureGrid: React.FC = () => {
       icon: <Calendar />,
       desc: "公會活動與講座行事曆",
       details: "公會舉辦的各類學術演講、參訪活動、會員聯誼等行程一目了然。支援一鍵加入手機行事曆功能，並可在活動前收到貼心提醒，確保您不錯過任何精彩活動。介面以月曆形式呈現，並標註重要日程，讓您的行程安排更加從容。",
+      link: "https://thinklab-architects.github.io/line-event/",
       images: {
         front: "https://images.unsplash.com/photo-1540317580384-e5d43867caa6?auto=format&fit=crop&q=80&w=1200",
         back: "https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&q=80&w=1200"
@@ -107,6 +111,7 @@ export const FeatureGrid: React.FC = () => {
       icon: <School />,
       desc: "專業進修課程報名與紀錄",
       details: "瀏覽最新的專業進修課程資訊，並可直接透過 LINE 完成線上報名。系統同時記錄您的個人進修時數與積分，方便隨時查閱換證所需的積分進度。我們還提供課程講義下載與課後問卷回饋，全方位提升學習體驗。",
+      link: "https://thinklab-architects.github.io/line-courses/",
       images: {
         front: "https://images.unsplash.com/photo-1524178232363-1fb2b075b955?auto=format&fit=crop&q=80&w=1200",
         back: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&q=80&w=1200"
@@ -117,6 +122,7 @@ export const FeatureGrid: React.FC = () => {
       icon: <Share2 />,
       desc: "連結公會 Facebook 與 YouTube",
       details: "匯集公會所有的社群媒體頻道。您可以在此觀看研討會錄影回放、瀏覽活動照片，並與其他會員進行線上互動。建立更緊密的專業社群網絡，分享執業心得，並獲取第一手的活動花絮。",
+      link: "https://thinklab-architects.github.io/line-social/",
       images: {
         front: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&q=80&w=1200",
         back: "https://images.unsplash.com/photo-1611926653458-09294b3142bf?auto=format&fit=crop&q=80&w=1200"
@@ -197,7 +203,7 @@ export const FeatureGrid: React.FC = () => {
 
                   <div className="pt-6">
                     <a
-                      href="#"
+                      href={features[selectedFeature].link || "#"}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-2 px-8 py-3 bg-kaa-navy text-white font-bold uppercase tracking-wider text-sm rounded-sm hover:bg-kaa-gold hover:text-kaa-navy transition-all shadow-lg group"
