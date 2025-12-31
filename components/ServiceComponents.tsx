@@ -333,7 +333,7 @@ export const TimelineSection: React.FC = () => {
 export const ChatBotPreview: React.FC = () => {
   const [messages, setMessages] = useState([
     { role: 'bot', text: '您好，高雄市建築師公會 AI 助理為您服務。請問有什麼我可以幫您的？' },
-    { role: 'user', text: '我想查詢今年的建築師講習積分。' },
+    { role: 'user', text: '理監事' },
     { role: 'bot', text: '沒問題！請點擊下方「會員專區」>「積分查詢」，輸入您的會員編號即可查閱最新累計積分。' }
   ]);
 
