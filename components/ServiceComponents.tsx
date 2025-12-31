@@ -32,18 +32,9 @@ export const OriginFlipCard: React.FC<OriginFlipCardProps> = ({ isFlipped, onFli
           <img
             src={traditionalGroupImg}
             alt="Traditional Messy Group"
-            className="w-full h-full object-cover brightness-50"
+            className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-6 text-center">
-            <div className="mb-4 p-3 bg-red-500/20 rounded-full border border-red-500/50 backdrop-blur-sm">
-              <RefreshCw size={24} className="animate-spin-slow" />
-            </div>
-            <h4 className="text-2xl font-serif font-bold mb-2">傳統 LINE 群組</h4>
-            <p className="text-sm opacity-80">訊息紛雜、重要公告易被洗版、缺乏隱私保障</p>
-            <div className="mt-6 px-4 py-2 border border-white/30 rounded-full text-xs uppercase tracking-widest hover:bg-white hover:text-kaa-navy transition-all">
-              點擊翻轉查看數位方案
-            </div>
-          </div>
+
         </div>
 
         {/* Back side: Modern/Official */}
@@ -51,21 +42,13 @@ export const OriginFlipCard: React.FC<OriginFlipCardProps> = ({ isFlipped, onFli
           <img
             src={officialServiceImg}
             alt="Official Digital Service"
-            className="w-full h-full object-cover opacity-80"
+            className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-white/90 backdrop-blur-[2px] flex flex-col items-center justify-center text-kaa-navy p-6 text-center">
-            <div className="mb-4 p-3 bg-kaa-gold rounded-full shadow-lg shadow-kaa-gold/40">
-              <Smartphone size={24} className="text-kaa-navy" />
-            </div>
-            <h4 className="text-2xl font-serif font-bold mb-2 text-kaa-gold">官方 LINE 服務</h4>
-            <p className="text-sm opacity-90 font-medium">分類推播、24/7 智慧回覆、系統整合、隱私優先</p>
-            <div className="mt-6 px-4 py-2 bg-kaa-gold text-kaa-navy rounded-full text-xs font-bold uppercase tracking-widest shadow-md">
-              智慧公會 · 數位轉型
-            </div>
-          </div>
+
         </div>
-      </motion.div>
-    </div>
+
+      </motion.div >
+    </div >
   );
 };
 
