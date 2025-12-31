@@ -438,9 +438,6 @@ const App: React.FC = () => {
             <p className="text-sm max-w-md">807高雄市三民區博愛一路366號23樓<br />Tel: 07 323 7248</p>
           </div>
           <div className="flex gap-8 text-sm text-kaa-slate/80 font-medium">
-            <a href="https://www.kaa.org.tw/" target="_blank" rel="noopener noreferrer" className="hover:text-kaa-gold transition-colors">公會官網</a>
-            <a href="#" className="hover:text-kaa-gold transition-colors">法規查詢</a>
-            <a href="#" className="hover:text-kaa-gold transition-colors">隱私權政策</a>
           </div>
         </div>
         <div className="text-center mt-16 pt-8 border-t border-gray-200 text-[10px] tracking-widest text-kaa-slate/40 uppercase">
