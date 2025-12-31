@@ -305,12 +305,12 @@ export const TimelineSection: React.FC = () => {
                   </div>
                 )}
 
-                <div className="absolute top-4 right-4 text-xs font-bold text-kaa-gold font-mono">{s.date}</div>
-                <div className="text-kaa-gold font-bold text-sm mb-2 uppercase tracking-widest">{s.phase}</div>
-                <h3 className="font-serif text-2xl text-kaa-navy mb-6">{s.title}</h3>
+                <div className="absolute top-4 right-4 text-base font-bold text-kaa-gold font-mono">{s.date}</div>
+                <div className="text-kaa-gold font-bold text-lg mb-2 uppercase tracking-widest">{s.phase}</div>
+                <h3 className="font-serif text-3xl text-kaa-navy mb-6">{s.title}</h3>
                 <ul className="space-y-2">
                   {s.items.map((item, idx) => (
-                    <li key={idx} className="flex items-center gap-2 text-kaa-slate text-sm italic">
+                    <li key={idx} className="flex items-center gap-2 text-kaa-slate text-lg italic">
                       <div className="w-1 h-1 bg-kaa-gold"></div>
                       {item}
                     </li>
