@@ -404,9 +404,9 @@ const App: React.FC = () => {
                   公會與您一同邁向智慧建築新視界。
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <button className="px-10 py-4 bg-kaa-navy text-white rounded-md font-bold text-lg shadow-lg hover:bg-gray-800 transition-all flex items-center justify-center gap-3">
-                    <MessageSquare /> 點擊加入好友
-                  </button>
+                  <a href="https://lin.ee/Y2TbPdj" target="_blank" rel="noopener noreferrer">
+                    <img src="https://scdn.line-apps.com/n/line_add_friends/btn/zh-Hant.png" alt="加入好友" height="36" className="h-[36px]" />
+                  </a>
                   <div className="flex items-center gap-4 text-kaa-navy/60 text-2xl italic font-bold">
                     <span>或搜尋 ID: @kaa.org</span>
                   </div>
