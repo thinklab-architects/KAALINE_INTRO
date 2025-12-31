@@ -404,7 +404,7 @@ const App: React.FC = () => {
                   公會與您一同邁向智慧建築新視界。
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <a href="https://lin.ee/Y2TbPdj" target="_blank" rel="noopener noreferrer" className="inline-block bg-black px-10 py-5 rounded-xl hover:opacity-90 transition-opacity shadow-xl text-white font-bold text-3xl tracking-widest leading-none">
+                  <a href="https://lin.ee/Y2TbPdj" target="_blank" rel="noopener noreferrer" className="inline-block bg-black px-8 py-4 rounded-xl hover:opacity-90 transition-opacity shadow-xl text-white font-bold text-2xl tracking-widest leading-none">
                     點擊立即加入
                   </a>
                   <div className="flex items-center gap-4 text-kaa-navy/60 text-2xl italic font-bold">
