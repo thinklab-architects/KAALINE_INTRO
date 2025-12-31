@@ -9,6 +9,12 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Bell, Search, Send, Smartphone, RefreshCw, Calendar, School, Share2, CircleDollarSign, X, ArrowRight, ChevronRight, RotateCw } from 'lucide-react';
 import traditionalGroupImg from '../傳統LINE群組.png';
 import officialServiceImg from '../官方LINE服務.png';
+import newsIcon from '../ICON/最新消息.jpg';
+import regulationsIcon from '../ICON/法規資訊.jpg';
+import refundIcon from '../ICON/本月退款.jpg';
+import eventsIcon from '../ICON/活動訊息.jpg';
+import coursesIcon from '../ICON/研討活動.jpg';
+import socialIcon from '../ICON/社交媒體.jpg';
 
 interface OriginFlipCardProps {
   isFlipped: boolean;
@@ -64,7 +70,7 @@ export const FeatureGrid: React.FC = () => {
   const features = [
     {
       title: "最新消息",
-      icon: <Bell />,
+      icon: newsIcon,
       desc: "即時掌握公會公告與業界動態",
       details: "透過官方 LINE，您將第一時間收到公會發布的最新公告、會議通知以及建築業界的重要動態。不再擔心因為群組訊息過多而漏接重要資訊，系統會自動將緊急且重要的消息推播給您。除此之外，我們還整合了即時新聞推播，讓您隨時掌握法規變更與政策動向。",
       link: "https://thinklab-architects.github.io/news/",
@@ -75,7 +81,7 @@ export const FeatureGrid: React.FC = () => {
     },
     {
       title: "法規資訊",
-      icon: <Search />,
+      icon: regulationsIcon,
       desc: "建築法規數據庫快速檢索",
       details: "整合全國與高雄市在地建築法規資料庫。輸入關鍵字即可快速檢索相關條文、解釋令與函釋。提供手機版最佳化閱讀體驗，是您外出開會、跑照時的最佳隨身法規顧問。系統支援模糊搜尋與歷史紀錄，讓查閱法規變得前所未有的簡單。",
       link: "https://thinklab-architects.github.io/line-code/",
@@ -86,7 +92,7 @@ export const FeatureGrid: React.FC = () => {
     },
     {
       title: "查詢退費",
-      icon: <CircleDollarSign />,
+      icon: refundIcon,
       desc: "線上查詢掛號與退費進度",
       details: "輸入案件掛號號碼，即可即時查詢案件審查進度與退費辦理情形。省去電話詢問的等待時間，隨時隨地掌握案件流向，提升事務所行政效率。系統自動串接公會後台，數據即時同步，並可設定進度變更主動通知。",
       link: "",
@@ -97,7 +103,7 @@ export const FeatureGrid: React.FC = () => {
     },
     {
       title: "活動訊息",
-      icon: <Calendar />,
+      icon: eventsIcon,
       desc: "公會活動與講座行事曆",
       details: "公會舉辦的各類學術演講、參訪活動、會員聯誼等行程一目了然。支援一鍵加入手機行事曆功能，並可在活動前收到貼心提醒，確保您不錯過任何精彩活動。介面以月曆形式呈現，並標註重要日程，讓您的行程安排更加從容。",
       link: "https://thinklab-architects.github.io/line-event/",
@@ -108,7 +114,7 @@ export const FeatureGrid: React.FC = () => {
     },
     {
       title: "研討課程",
-      icon: <School />,
+      icon: coursesIcon,
       desc: "專業進修課程報名與紀錄",
       details: "瀏覽最新的專業進修課程資訊，並可直接透過 LINE 完成線上報名。系統同時記錄您的個人進修時數與積分，方便隨時查閱換證所需的積分進度。我們還提供課程講義下載與課後問卷回饋，全方位提升學習體驗。",
       link: "https://thinklab-architects.github.io/line-courses/",
@@ -119,7 +125,7 @@ export const FeatureGrid: React.FC = () => {
     },
     {
       title: "社交媒體",
-      icon: <Share2 />,
+      icon: socialIcon,
       desc: "連結公會 Facebook 與 YouTube",
       details: "匯集公會所有的社群媒體頻道。您可以在此觀看研討會錄影回放、瀏覽活動照片，並與其他會員進行線上互動。建立更緊密的專業社群網絡，分享執業心得，並獲取第一手的活動花絮。",
       link: "https://thinklab-architects.github.io/line-social/",
@@ -141,7 +147,7 @@ export const FeatureGrid: React.FC = () => {
               className="w-full lg:w-[75%] aspect-[4/3] flex flex-col items-center justify-center bg-kaa-gold rounded-sm group hover:bg-yellow-400 transition-all duration-300 p-2 md:p-6 text-kaa-navy shadow-sm cursor-pointer relative"
             >
               <div className="mb-2 md:mb-3">
-                {React.cloneElement(f.icon as React.ReactElement<any>, { className: "w-8 h-8 md:w-12 md:h-12", strokeWidth: 1.5 })}
+                <img src={f.icon as string} alt={f.title} className="w-10 h-10 md:w-14 md:h-14 object-contain rounded-full shadow-sm" />
               </div>
               <h3 className="font-serif text-base md:text-xl font-bold tracking-widest text-center mb-1 md:mb-2">{f.title}</h3>
               <p className="text-center font-medium opacity-80 text-[10px] md:text-xs leading-relaxed max-w-full md:max-w-[90%] line-clamp-2 md:line-clamp-none">
@@ -187,7 +193,7 @@ export const FeatureGrid: React.FC = () => {
                     Feature .0{selectedFeature + 1}
                   </div>
                   <h3 className="text-4xl md:text-5xl font-serif font-bold text-kaa-navy mb-6 flex items-center gap-4">
-                    {React.cloneElement(features[selectedFeature].icon as React.ReactElement<any>, { size: 48, className: "text-kaa-gold", strokeWidth: 1.5 })}
+                    <img src={features[selectedFeature].icon as string} alt={features[selectedFeature].title} className="w-16 h-16 object-contain rounded-full shadow-md" />
                     {features[selectedFeature].title}
                   </h3>
                   <div className="w-20 h-1 bg-kaa-gold mb-8"></div>
