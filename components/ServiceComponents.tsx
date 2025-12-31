@@ -8,6 +8,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Bell, Search, Send, Smartphone, RefreshCw, Calendar, School, Share2, CircleDollarSign, X, ArrowRight, ChevronRight, RotateCw } from 'lucide-react';
 import traditionalGroupImg from '../傳統LINE群組.png';
+import officialServiceImg from '../官方LINE服務.png';
 
 interface OriginFlipCardProps {
   isFlipped: boolean;
