@@ -127,7 +127,7 @@ export const FeatureGrid: React.FC = () => {
       title: "社交媒體",
       icon: socialIcon,
       desc: "連結公會 Facebook 與 YouTube",
-      details: "匯集公會所有的社群媒體頻道。您可以在此觀看研討會錄影回放、瀏覽活動照片，並與其他會員進行線上互動。建立更緊密的專業社群網絡，分享執業心得，並獲取第一手的活動花絮。",
+      details: "匯集公會所有的社群媒體頻道。可以與其他會員進行線上互動。建立更緊密的專業社群網絡，分享執業心得，並獲取第一手的活動花絮。",
       link: "https://thinklab-architects.github.io/line-social/",
       images: {
         front: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&q=80&w=1200",
