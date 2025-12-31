@@ -408,7 +408,7 @@ const App: React.FC = () => {
                     <MessageSquare /> 點擊加入好友
                   </button>
                   <div className="flex items-center gap-4 text-kaa-navy/60 text-2xl italic font-bold">
-                    <span>或搜尋 ID: @kaarch</span>
+                    <span>或搜尋 ID: @kaa.org</span>
                   </div>
                 </div>
               </div>
