@@ -400,7 +400,8 @@ const App: React.FC = () => {
               <div className="md:w-1/2 p-12 md:p-20 flex flex-col justify-center text-kaa-navy">
                 <h2 className="font-serif text-4xl md:text-5xl mb-6">現在就加入公會<br />官方 LINE</h2>
                 <p className="text-kaa-navy/80 text-lg mb-10 leading-relaxed font-medium">
-                  掌握最新建築脈動，體驗最便捷的數位會務服務。公會與您一同邁向智慧建築新視界。
+                  掌握最新建築脈動，體驗最便捷的數位會務服務。<br />
+                  公會與您一同邁向智慧建築新視界。
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <button className="px-10 py-4 bg-kaa-navy text-white rounded-md font-bold text-lg shadow-lg hover:bg-gray-800 transition-all flex items-center justify-center gap-3">
