@@ -318,21 +318,9 @@ const App: React.FC = () => {
                 </div>
                 <h2 className="font-serif text-4xl md:text-5xl mb-8 text-kaa-navy">24/7 智能客服：<br />機器人自動回答</h2>
                 <p className="text-lg text-kaa-slate mb-8 leading-relaxed">
-                  不再需要等待上班時間撥打電話。公會 LINE 整合了強大的語意分析機器人，能針對常見問題提供即時回覆。
+                  不再需要等待上班時間撥打電話。公會 LINE 整合了強大的自動回覆機器人，能針對常見問題提供即時回覆。
                 </p>
-                <ul className="space-y-4">
-                  {[
-                    "各類講習積分查詢指引",
-                    "建築法規快速索引鏈接",
-                    "常見會務申請表單下載",
-                    "入會與退會流程說明"
-                  ].map((item, idx) => (
-                    <li key={idx} className="flex items-center gap-3 text-kaa-navy font-medium">
-                      <div className="w-1.5 h-1.5 bg-kaa-gold rotate-45"></div>
-                      {item}
-                    </li>
-                  ))}
-                </ul>
+
               </div>
             </div>
           </div>
