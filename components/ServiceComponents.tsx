@@ -83,7 +83,7 @@ export const FeatureGrid: React.FC = () => {
       title: "法規資訊",
       icon: regulationsIcon,
       desc: "建築法規數據庫快速檢索",
-      details: "整合全國與高雄市在地建築法規資料庫。輸入關鍵字即可快速檢索相關條文、解釋令與函釋。提供手機版最佳化閱讀體驗，是您外出開會、跑照時的最佳隨身法規顧問。系統支援模糊搜尋與歷史紀錄，讓查閱法規變得前所未有的簡單。",
+      details: "整合全國與高雄市在地建築法規新消息。輸入關鍵字即可快速檢索相關法規資訊。提供手機版最佳化閱讀體驗。",
       link: "https://thinklab-architects.github.io/line-code/",
       images: {
         front: "https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&q=80&w=1200",
