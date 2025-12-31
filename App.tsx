@@ -435,7 +435,7 @@ const App: React.FC = () => {
               <img src={logo} alt="Logo" className="w-8 h-8 object-contain" />
               高雄市建築師公會
             </a>
-            <p className="text-sm max-w-md">高雄市三民區博愛一路 391 號 10 樓<br />Tel: (07) 323-7248 | Fax: (07) 323-7245</p>
+            <p className="text-sm max-w-md">807高雄市三民區博愛一路366號23樓<br />Tel: 07 323 7248</p>
           </div>
           <div className="flex gap-8 text-sm text-kaa-slate/80 font-medium">
             <a href="https://www.kaa.org.tw/" target="_blank" rel="noopener noreferrer" className="hover:text-kaa-gold transition-colors">公會官網</a>
