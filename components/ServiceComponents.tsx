@@ -18,6 +18,13 @@ import socialIcon from '../ICON/社交媒體.jpg';
 import logo from '../logo.png';
 import newsFrontImg from '../6services/最新消息-正面.jpg';
 import newsBackImg from '../6services/最新消息-反面.jpg';
+import regulationsFrontImg from '../6services/法規資訊-正面.jpg';
+import regulationsBackImg from '../6services/法規資訊-反面.jpg';
+import activitiesFrontImg from '../6services/活動訊息-正面.jpg';
+import activitiesBackImg from '../6services/活動訊息-反面.jpg';
+import coursesFrontImg from '../6services/研討活動-正面.jpg';
+import coursesBackImg from '../6services/研討活動-反面.jpg';
+import socialBackImg from '../6services/社交媒體-反面.jpg';
 
 interface OriginFlipCardProps {
   isFlipped: boolean;
@@ -89,8 +96,8 @@ export const FeatureGrid: React.FC = () => {
       details: "整合全國與高雄市在地建築法規新消息。輸入關鍵字即可快速檢索相關法規資訊。提供手機版最佳化閱讀體驗。",
       link: "https://thinklab-architects.github.io/line-code/",
       images: {
-        front: "https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&q=80&w=1200",
-        back: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=1200"
+        front: regulationsFrontImg,
+        back: regulationsBackImg
       }
     },
     {
@@ -111,8 +118,8 @@ export const FeatureGrid: React.FC = () => {
       details: "公會舉辦的各類參訪活動、會員聯誼等行程一目了然。確保您不錯過任何精彩活動，讓您的行程安排更加從容。",
       link: "https://thinklab-architects.github.io/line-event/",
       images: {
-        front: "https://images.unsplash.com/photo-1540317580384-e5d43867caa6?auto=format&fit=crop&q=80&w=1200",
-        back: "https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&q=80&w=1200"
+        front: activitiesFrontImg,
+        back: activitiesBackImg
       }
     },
     {
@@ -122,8 +129,8 @@ export const FeatureGrid: React.FC = () => {
       details: "瀏覽最新的專業進修課程資訊，並可直接連結線上報名。方便隨時查看最新課程的積分。",
       link: "https://thinklab-architects.github.io/line-courses/",
       images: {
-        front: "https://images.unsplash.com/photo-1524178232363-1fb2b075b955?auto=format&fit=crop&q=80&w=1200",
-        back: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&q=80&w=1200"
+        front: coursesFrontImg,
+        back: coursesBackImg
       }
     },
     {
@@ -134,7 +141,7 @@ export const FeatureGrid: React.FC = () => {
       link: "https://thinklab-architects.github.io/line-social/",
       images: {
         front: "https://images.unsplash.com/photo-1611926653458-09294b3142bf?auto=format&fit=crop&q=80&w=1200",
-        back: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&q=80&w=1200"
+        back: socialBackImg
       }
     }
   ];
