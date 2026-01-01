@@ -444,7 +444,7 @@ const App: React.FC = () => {
         </div>
         <div className="text-center mt-16 pt-8 border-t border-gray-200 flex flex-col gap-2">
           <p className="text-xs font-medium text-kaa-slate/60">
-            資訊委員會監製 | Thinklab Architects 之物建築 製作
+            資訊委員會監製 | <a href="https://www.tlabarc.com/" target="_blank" rel="noopener noreferrer" className="hover:text-kaa-navy transition-colors">Thinklab Architects 之物建築</a> 製作
           </p>
           <p className="text-[10px] tracking-widest text-kaa-slate/40 uppercase">
             © 2026 KAOHSIUNG ASSOCIATION OF ARCHITECTS. DIGITAL TRANSFORMATION PROJECT.
