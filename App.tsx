@@ -122,7 +122,7 @@ const App: React.FC = () => {
           <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-bold leading-tight mb-6 drop-shadow-sm">
             <span className="block md:inline">智慧公會</span>
             <span className="block md:inline my-2 md:my-0">·</span>
-            <span className="block md:inline text-kaa-gold text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-yellow-300" style={{ textShadow: 'none' }}>官方LINE</span>
+            <span className="block md:inline text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 via-yellow-200 to-yellow-600 bg-[length:200%_auto] animate-shimmer" style={{ textShadow: 'none' }}>官方LINE</span>
           </h1>
           <p className="max-w-2xl mx-auto text-lg md:text-2xl text-kaa-slate font-light leading-relaxed mb-8">
             打破空間與時間限制，高雄市建築師公會官方 LINE 服務正式啟動。為會員打造最即時、最便利的會務數位門戶。

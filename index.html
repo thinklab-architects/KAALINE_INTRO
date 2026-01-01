@@ -26,6 +26,16 @@
               slate: '#6B7280', // Gray-500
               cream: '#F3F4F6', // Gray-100 (Light Grey)
             }
+          },
+          keyframes: {
+            shimmer: {
+              '0%': { backgroundPosition: '200% center' },
+              '100%': { backgroundPosition: '-200% center' },
+            }
+          },
+          animation: {
+            shimmer: 'shimmer 3s linear infinite',
+            'spin-slow': 'spin 8s linear infinite',
           }
         }
       }
