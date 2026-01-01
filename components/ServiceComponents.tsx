@@ -247,6 +247,9 @@ export const FeatureGrid: React.FC = () => {
                   {/* Front Side */}
                   <div className="absolute inset-0 backface-hidden">
                     <div className="absolute inset-0 bg-kaa-navy/10 z-10 mix-blend-multiply"></div>
+                    <div className="absolute top-6 left-6 z-20 px-3 py-1 bg-gray-800/90 text-white text-xs font-bold tracking-widest rounded-sm shadow-md backdrop-blur-sm">
+                      BEFORE
+                    </div>
                     <img
                       src={features[selectedFeature].images.front}
                       alt={features[selectedFeature].title}
@@ -262,6 +265,9 @@ export const FeatureGrid: React.FC = () => {
                   {/* Back Side */}
                   <div className="absolute inset-0 backface-hidden rotate-y-180 bg-kaa-navy">
                     <div className="absolute inset-0 bg-kaa-gold/10 z-10 mix-blend-overlay"></div>
+                    <div className="absolute top-6 left-6 z-20 px-3 py-1 bg-kaa-gold/90 text-kaa-navy text-xs font-bold tracking-widest rounded-sm shadow-md backdrop-blur-sm">
+                      AFTER
+                    </div>
                     <img
                       src={features[selectedFeature].images.back}
                       alt={`${features[selectedFeature].title} Details`}
