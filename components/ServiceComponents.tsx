@@ -217,16 +217,18 @@ export const FeatureGrid: React.FC = () => {
                     {features[selectedFeature].details}
                   </p>
 
-                  <div className="pt-6">
-                    <a
-                      href={features[selectedFeature].link || "#"}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 px-8 py-3 bg-kaa-navy text-white font-bold uppercase tracking-wider text-sm rounded-sm hover:bg-kaa-gold hover:text-kaa-navy transition-all shadow-lg group"
-                    >
-                      ENTER <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
-                    </a>
-                  </div>
+                  {features[selectedFeature].link && (
+                    <div className="pt-6">
+                      <a
+                        href={features[selectedFeature].link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 px-8 py-3 bg-kaa-navy text-white font-bold uppercase tracking-wider text-sm rounded-sm hover:bg-kaa-gold hover:text-kaa-navy transition-all shadow-lg group"
+                      >
+                        ENTER <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
+                      </a>
+                    </div>
+                  )}
                 </div>
               </div>
 
