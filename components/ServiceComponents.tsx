@@ -18,6 +18,7 @@ import socialIcon from '../ICON/社交媒體.jpg';
 import logo from '../logo.png';
 import newsFrontImg from '../6services/最新消息-正面.jpg';
 import newsBackImg from '../6services/最新消息-反面.jpg';
+import refundBackImg from '../6services/本月退款-反面.jpg';
 import regulationsFrontImg from '../6services/法規資訊-正面.jpg';
 import regulationsBackImg from '../6services/法規資訊-反面.jpg';
 import activitiesFrontImg from '../6services/活動訊息-正面.jpg';
@@ -108,7 +109,7 @@ export const FeatureGrid: React.FC = () => {
       link: "",
       images: {
         front: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80&w=1200",
-        back: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&q=80&w=1200"
+        back: refundBackImg
       }
     },
     {
