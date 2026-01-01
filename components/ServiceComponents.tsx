@@ -290,7 +290,6 @@ export const FeatureGrid: React.FC = () => {
 
 export const TimelineSection: React.FC = () => {
   const steps = [
-    { phase: "第一階段", title: "基礎平台建立", date: "2026 Q1", items: ["官方帳號認證", "基礎選單架設", "官網資料串接", "自動回覆機器人"] },
     { phase: "第一階段", title: "基礎平台建立", date: "2026 Q1", items: ["官方帳號認證", "基礎選單架設", "官網資料串接", "自動回覆機器人"] }
   ];
 
@@ -336,7 +335,7 @@ export const TimelineSection: React.FC = () => {
               </motion.div>
             </div>
 
-            <div className="relative z-10 w-16 h-16 bg-white border-4 border-kaa-gold rounded-full flex items-center justify-center text-kaa-navy text-xl font-bold shadow-lg">
+            <div className="relative z-10 w-16 h-16 bg-white border-4 border-kaa-gold rounded-full hidden md:flex items-center justify-center text-kaa-navy text-xl font-bold shadow-lg">
               {i + 1}
             </div>
 
