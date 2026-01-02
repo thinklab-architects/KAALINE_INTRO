@@ -105,7 +105,7 @@ export const FeatureGrid: React.FC = () => {
       title: "查詢退費",
       icon: refundIcon,
       desc: "線上查詢掛號與退費進度",
-      details: "輸入案件掛號號碼，即可即時查詢案件審查進度與退費辦理情形。省去電話詢問的等待時間，隨時隨地掌握案件流向，提升事務所行政效率。",
+      details: "輸入本月退款，即可即時查詢案件審查進度與退費辦理情形。省去電話詢問的等待時間，隨時隨地掌握案件流向，提升事務所行政效率。",
       link: "",
       images: {
         front: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80&w=1200",
